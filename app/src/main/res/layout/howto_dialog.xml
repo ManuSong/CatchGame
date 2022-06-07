@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="500dp"
+    android:background="@drawable/game_image_bg"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <TextView
+        android:id="@+id/howto_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="How to Play this game"
+        android:textSize="40dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/bazzi"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="70dp"/>
+
+
+    <ImageView
+        android:id="@+id/howti_chac"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="40dp"
+        android:src="@drawable/dudeoji_chacter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/howto_title" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=": 두더지를 클릭하면 점수가 +1점 오릅니다."
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/bazzi"
+        app:layout_constraintStart_toEndOf="@+id/howti_chac"
+        app:layout_constraintTop_toTopOf="@id/howti_chac"
+        app:layout_constraintBottom_toBottomOf="@id/howti_chac"/>
+
+    <Button
+        android:id="@+id/howto_ok_btn"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/howti_chac"
+        android:text="확인"
+        android:backgroundTint="@color/purple_200"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
